@@ -1,0 +1,10 @@
+/*
+es6 to es5 command 
+babel index.js -d dist
+
+intall babel
+npm i -g babel-cli babel-core babel-preset-env babel-preset-stage-0 --only=dev
+
+something with arrays
+npm i babel-plugin-transform-object-rest-spread --only=dev
+*/
