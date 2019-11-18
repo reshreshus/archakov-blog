@@ -36,6 +36,17 @@ app.get('/posts', (req, res) => {
     });
 });
 
+app.get('/posts/:id', (req, res) => {
+    Post.findById(req.params.id).then( (err, post) => {
+        if (err) {
+            res.send(err);
+            return;
+        }
+
+        res.json(post);
+    });
+});
+
 
 app.delete('/posts/:id', (req, res) => {
     Post.remove({
